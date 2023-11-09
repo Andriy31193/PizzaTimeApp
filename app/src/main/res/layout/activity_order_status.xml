@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/thankYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:textAllCaps="true"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="@string/thank_you" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/notify_ready"
+        android:textColor="#A1887F"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="@string/order_is_preparing" />
+
+    <TextView
+        android:id="@+id/orderTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_dark"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:contentDescription="@string/notify_ready"
+        android:src="@drawable/cooking"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:background="@color/addBtnStroke"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:text="@string/back_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

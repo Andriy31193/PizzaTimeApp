@@ -1,0 +1,8 @@
+<!-- left_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="4dp">
+        <shape>
+            <solid android:color="@color/purple_700" /> <!-- Border color (red in this example) -->
+        </shape>
+    </item>
+</layer-list>

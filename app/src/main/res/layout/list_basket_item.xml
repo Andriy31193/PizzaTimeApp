@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layout_bg"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pizza"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pizza_item_clr"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/pizza_item_clr"
+                    android:text=""
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/extras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extras: cheese"
+                    android:textColor="@color/pizza_item_clr"
+                    android:textSize="15dp"
+                    tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pizza_item_clr"
+                    android:textSize="20sp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEdit"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="start"
+                android:background="@drawable/edit"
+                android:textColor="@color/pizza_item_clr"
+                android:textSize="16sp"
+                tools:ignore="PxUsage,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRemove"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="start"
+                android:background="@drawable/trash"
+                android:textColor="@color/pizza_item_clr"
+                android:textSize="16sp"
+                tools:ignore="PxUsage,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintBounds" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

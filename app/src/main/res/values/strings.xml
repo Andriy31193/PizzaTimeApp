@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">PizzaTime</string>
+    <string name="pizza_options_sel_opt">Select options:</string>
+    <string name="remove_ingredients">Edit ingredients</string>
+    <string name="your_order">Your order:</string>
+    <string name="sel_sizes">Select size</string>
+    <string name="add">+</string>
+    <string name="back">Back</string>
+    <string name="order_now">Order now!</string>
+    <string name="total">"Total: "</string>
+    <string name="done">Done</string>
+    <string name="your_pizza">YOUR PIZZA:</string>
+    <string name="add_extras">ADD EXTRAS</string>
+    <string name="edit_ingredients">EDIT INGREDIENTS</string>
+    <string name="select_size">SELECT SIZE</string>
+    <string name="take_pizzas">Take pizzas:</string>
+    <string name="our_menu">Our menu:</string>
+    <string name="menu">MENU</string>
+    <string name="n_continue">CONTINUE</string>
+    <string name="go_to_checkout">GO TO CHECKOUT</string>
+    <string name="nothing_s_here">Nothing\'s here</string>
+    <string name="your_basket_has">"Your basket has "</string>
+    <string name="items">items</string>
+
+
+    <!-- MainActivity -->
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="notify_ready">We\'ll notify you on your phone as soon as your order is ready to be delivered :)</string>
+    <string name="order_preparing">Your order is preparing</string>
+
+    <!-- Order Confirmation Activity -->
+    <string name="thank_you">THANK YOU, ANDRII</string>
+    <string name="order_is_preparing">Your order is preparing</string>
+
+    <!-- Button Text -->
+    <string name="back_button">BACK</string>
+    <string name="pay_with_gpay">Pay with GPay</string>
+    <string name="select">SELECT</string>
+    <string name="your_basket">YOUR BASKET</string>
+    <string name="skipasind_40_104_reykjavik">Skipasind 40, 104 Reykjavik</string>
+    <string name="_30_40_minutes">30 - 40 minutes</string>
+    <string name="card_ending_in_8888">card ending in 8888</string>
+    <string name="give_me_my_pizza">GIVE ME MY PIZZA!</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+
+</resources>

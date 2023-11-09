@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".activities.OrderPizzaActivity">
+
+    <LinearLayout
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlSymmetry">
+            <TextView
+                android:id="@+id/basketCount"
+                android:background="@drawable/rounded_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/eIngredients"
+                android:textAlignment="center"
+                android:textSize="55px"
+                android:text=""
+                tools:ignore="PxUsage"></TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/basketBtn"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_gravity="center"
+                android:layout_margin="15px"
+
+                android:background="@drawable/basket"
+                tools:ignore="PxUsage,SpeakableTextPresentCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewPizzaChoices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:divider="@color/transparent"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n_continue"
+        android:textSize="18sp"
+        android:background="@color/addBtn"
+        android:textColor="@color/gray"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:gravity="center"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>

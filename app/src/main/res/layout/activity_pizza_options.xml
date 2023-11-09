@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PizzaOptionsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/your_pizza"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagePizza"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_bg"
+            android:src="@drawable/pizza"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/done" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/editIngredientsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/remove_button"
+                android:paddingHorizontal="35px"
+                android:text="@string/remove_ingredients"
+                android:textColor="@color/eIngredients"
+                android:textStyle="normal"
+                tools:ignore="PxUsage,TextContrastCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_size"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/listView"
+        android:layout_gravity="center"
+        android:layout_marginTop="15px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="PxUsage">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/select_size_30_preview_img"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@drawable/small_pizza"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/select_size_btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="SELECT"
+                tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/select_size_60_preview_img"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@drawable/meduim_pizza"
+                android:importantForAccessibility="no" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/select_size_btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/select_size_90_preview_img"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@drawable/huge_pizza"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/select_size_btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editIngredientsLayout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/edit_ingredients" />
+
+
+    <HorizontalScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        >
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/listViewIng"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="ScrollViewSize"></androidx.recyclerview.widget.RecyclerView>
+
+    </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editExtrasLayout"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/add_extras"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    <HorizontalScrollView
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:scrollbars="horizontal"
+        tools:ignore="PxUsage">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listViewExtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ScrollViewSize">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </HorizontalScrollView>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/done"
+        android:textColor="#5D4037"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+{
+  "pizzas": [
+    {
+      "image_resource": "pizza",
+      "title": "Margherita",
+      "price": 12,
+      "ingredients": [
+        {
+          "title": "Tomato Sauce",
+          "image": "tomato"
+        },
+        {
+          "title": "Fresh Mozzarella",
+          "image": "cheese"
+        },
+        {
+          "title": "Basil",
+          "image": "basil"
+        }
+      ],
+      "description": "Classic Margherita pizza with fresh ingredients."
+    },
+    {
+      "image_resource": "pizza",
+      "title": "Pepperoni",
+      "price": 10,
+      "ingredients": [
+        {
+          "title": "Tomato Sauce",
+          "image": "tomato"
+        },
+        {
+          "title": "Mozzarella",
+          "image": "cheese"
+        },
+        {
+          "title": "Pepperoni",
+          "image": "pepperoni"
+        }
+      ],
+      "description": "Classic Pepperoni pizza with a generous amount of pepperoni slices."
+    }
+  ],
+  "extras": [
+    {
+      "title": "Meat",
+      "image": "meat",
+      "price": 15
+    },
+    {
+      "title": "Extra",
+      "image": "cheese",
+      "price": 10
+    },
+    {
+      "title": "Olives",
+      "image": "olives",
+      "price": 8
+    }
+  ]
+}
